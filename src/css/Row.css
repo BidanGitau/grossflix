@@ -1,0 +1,41 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+h2 {
+    color: aliceblue;
+    padding: 1rem;
+}
+
+.row {
+    margin-left: 20px;
+}
+
+.row_posters {
+    display: flex;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+}
+
+.row_poster {
+    object-fit: contain;
+    max-height: 100px;
+    width: 100%;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.row_poster:hover {
+    transform: scale(1.08);
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.09);
+}
