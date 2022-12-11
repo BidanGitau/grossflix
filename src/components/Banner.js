@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "../hooks/api";
 import query from "../request";
 import "../css/Banner.css";
+
 function Banner() {
   const [movie, setMovie] = useState([]);
   useEffect(() => {

@@ -6,7 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Characters from "./pages/Characters";
+import Cast from "./pages/Cast";
+import CastDetails from "./components/CastDetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,7 +17,8 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/characters" element={<Characters />} />
+        <Route path="/characters/:movieId" element={<Cast />}></Route>
+        <Route path="castDetails" element={<CastDetails />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

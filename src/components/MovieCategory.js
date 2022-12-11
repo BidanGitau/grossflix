@@ -14,8 +14,7 @@ function MovieCategory() {
   ];
   let i = 0;
   let categories = Object.keys(request).map((item) => {
-    console.log(item);
-    return <Row title={titles[i++]} fetchUrl={request[item]} />;
+    return <Row title={titles[i++]} fetchUrl={request[item]} key={item} />;
   });
   return categories;
 }
